@@ -1,0 +1,8 @@
+*iml
+dump.rdb
+*ipr
+*iws
+*idea
+dependency-reduced-pom.xml
+target
+.DS_Store
