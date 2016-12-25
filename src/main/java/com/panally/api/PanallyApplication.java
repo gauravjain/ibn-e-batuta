@@ -1,16 +1,18 @@
-package com.panally.ui;
+package com.panally.api;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
 /**
- * Created by gaurav on 22/12/16.
+ * @author gaurav.jain
+ * @author nirlendu.saha
  */
 public class PanallyApplication extends Application<PanallyConfiguration> {
     public static void main(String[] args) throws Exception {
         new PanallyApplication().run(args);
     }
+
     @Override
     public void initialize(Bootstrap<PanallyConfiguration> bootstrap) {
     }

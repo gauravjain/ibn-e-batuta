@@ -1,4 +1,4 @@
-package com.panally.ui;
+package com.panally.api;
 
 /**
  * Created by gaurav on 22/12/16.

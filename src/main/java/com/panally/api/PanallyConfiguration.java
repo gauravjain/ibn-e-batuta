@@ -1,4 +1,4 @@
-package com.panally.ui;
+package com.panally.api;
 
 import io.dropwizard.Configuration;
 import lombok.Getter;
