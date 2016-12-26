@@ -5,3 +5,14 @@ server:
   adminConnectors:
     - type: http
       port: 9002
+# Database settings.
+database:
+
+  # the name of your JDBC driver
+  driverClass: org.postgresql.Driver
+
+  # the username
+  user: nirlendu
+
+  # the JDBC URL
+  url: jdbc:postgresql://localhost:5432/panally

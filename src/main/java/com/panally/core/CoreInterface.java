@@ -7,9 +7,9 @@ import com.panally.modules.tours.ToursInterface;
  */
 public class CoreInterface{
 
-	private tourInterface = new ToursInterface();
+	private ToursInterface tourInterface = new ToursInterface();
 
-	public static String getListings(String userID){
+	public String getListings(String userID){
 		return this.tourInterface.getListings(userID);
 	}
 }

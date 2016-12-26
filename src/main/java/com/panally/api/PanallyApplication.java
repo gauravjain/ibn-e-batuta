@@ -1,8 +1,10 @@
 package com.panally.api;
 
 import io.dropwizard.Application;
+import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.dropwizard.migrations.MigrationsBundle;
 
 /**
  * @author gaurav.jain
@@ -15,6 +17,12 @@ public class PanallyApplication extends Application<PanallyConfiguration> {
 
     @Override
     public void initialize(Bootstrap<PanallyConfiguration> bootstrap) {
+        bootstrap.addBundle(new MigrationsBundle<PanallyConfiguration>() {
+            @Override
+            public DataSourceFactory getDataSourceFactory(PanallyConfiguration configuration) {
+                return configuration.getDataSourceFactory();
+            }
+        });
     }
 
     @Override
